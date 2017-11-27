@@ -52,7 +52,7 @@ const injectSections1 = (items, sections) => {
             items[v.index]=[v.content,items[v.index]]
         }
     );
-    // apply 降维
+    // 数组拍平
     return [].concat.apply([],items);
 }
 
