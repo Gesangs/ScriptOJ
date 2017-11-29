@@ -1,2 +1,2 @@
 # ScriptOJ
-刷题汇总
+[刷题](https://scriptoj.com/)汇总
