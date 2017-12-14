@@ -16,7 +16,6 @@ const cats = [
     { name: 'Lucy', weight: 400 },
     { name: 'Lily', weight: 700 },
     { name: 'Jerry', weight: 600 },
-    ...
   ]
 
   function renderFatCats (cats) {
