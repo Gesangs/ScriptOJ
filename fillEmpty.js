@@ -10,6 +10,13 @@
 // // a 变成 ['Hello', 'Hello', null, undefined, 'OK', 'Hello']
 // 注意，你要原地修改原先的数组，而不是返回一个新的数组。
 
+// in 操作符 判断：对象中的属性名（包括原型上的），数组中的索引
+
+// Reflect.has(Object, 'assign')
+
+// forEach() 对于空数组是不会执行回调函数的
+
+
 const fillEmpty = (arr) => /* TODO */ {
     for(let index = 0; index < arr.length; index++) {
       if(!(index in arr)) arr[index] = 'Hello'
@@ -17,4 +24,3 @@ const fillEmpty = (arr) => /* TODO */ {
   }
 
   
-//    forEach() 对于空数组是不会执行回调函数的
