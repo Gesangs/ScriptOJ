@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* .left, .right{
+            float:left;
+            height: 500px;
+        }
+        .left{
+            width: 200px;
+            margin-left: -100%;
+            background-color: brown;
+        }
+        .right{
+            width: 100%;
+        }
+        .main{
+            margin-left: 200px;
+            height: 500px; 
+            background-color: blue;
+        } */
+
+        .contarin{
+            display: flex;
+        }
+        .left{
+            flex: 0 0 200px;
+            width: 200px;
+        }
+        .middle{
+            background-color: blue;
+            flex: 1 0 0;
+        }
+        .right{
+            background-color: cadetblue;
+            flex:  0 0 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contarin">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
