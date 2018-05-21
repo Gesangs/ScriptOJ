@@ -5,51 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        /* .left, .right{
-            float:left;
-            height: 500px;
-        }
-        .left{
-            width: 200px;
-            margin-left: -100%;
-            background-color: brown;
-        }
-        .right{
-            width: 100%;
-        }
-        .main{
-            margin-left: 200px;
-            height: 500px; 
-            background-color: blue;
-        } */
-
-        .contarin{
+        /* .container{
             display: flex;
         }
-        .left{
+        #left{
             flex: 0 0 200px;
             width: 200px;
         }
-        .middle{
+        #middle{
             background-color: blue;
             flex: 1 0 0;
         }
-        .right{
+        #right{
             background-color: cadetblue;
             flex:  0 0 200px;
             width: 200px;
+        } */
+
+        .column {
+            padding-top: 1em;
+            text-align: justify;
+            position: relative;
+            float: left;
+            min-height: 200px;
         }
+        #right {
+            background: #F66;
+            width: 130px;
+            padding: 0 10px;
+            margin-right: -100%;
+        }
+        #left {
+            width: 180px;
+            padding: 0 10px;
+            right: 240px;
+            margin-left: -100%;
+            background: #66F;
+        }
+        #center {
+            padding: 0 20px;
+            width: 100%;
+            background: #DDD;
+        }
+
+        body {
+            margin: 0;
+            padding-left: 200px;
+            padding-right: 190px;
+            min-width: 240px;
+        }
+        
     </style>
 </head>
 <body>
-    <div class="contarin">
-        <div class="left"></div>
-        <div class="middle"></div>
-        <div class="right"></div>
+    <div class="container">
+        <div id="center" class="column">middle</div>
+        <div id="left" class="column"></div>
+        <div id="right" class="column"></div>
     </div>
 </body>
 </html>
+
